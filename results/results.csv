@@ -1,0 +1,4 @@
+model,test_loss,perplexity,top1,top5
+Markov (bigram),,,0.04,0.265
+LSTM,3.401,30.0,0.329,0.595
+GRU,3.498,33.062,0.322,0.584

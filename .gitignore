@@ -1,0 +1,13 @@
+# data and downloads
+data/
+midi_files/
+maestro-v3.0.0/
+maestro_midi.zip
+generated.zip
+# model checkpoints
+*.pt
+# python / jupyter
+__pycache__/
+.ipynb_checkpoints/
+venv/
+.DS_Store

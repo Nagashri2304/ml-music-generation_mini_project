@@ -1,0 +1,7 @@
+torch
+pretty_midi
+numpy
+pandas
+matplotlib
+jupyter
+pyfluidsynth   # optional: audio playback of generated MIDI (also needs the fluidsynth system package)
