@@ -23,12 +23,21 @@ The work follows the Stanford project *Generating Music with Machine Learning* (
 ├── README.md
 ├── requirements.txt
 ├── .gitignore
+├── docs/
+│   ├── Generating Music with Machine Learning.pptx
+│   ├── Work_Division_Group22.pdf
+│   ├── Writeup_Draft_Group22.pdf
+│   └── survey_results.csv
+├── generated/
+│   ├── 0_original.mid
+│   ├── 1_markov.mid
+│   ├── 2_lstm.mid
+│   └── 3_gru.mid
 ├── notebooks/
-│   └── music_generation.ipynb   # full pipeline: data -> train -> evaluate -> generate
-├── data/                        # MIDI files are downloaded here (not committed)
-├── generated/                   # output .mid files (original, markov, lstm, gru)
-├── results/                     # results.csv, loss_curves.png
-└── docs/                        # write-up PDF, slides, survey results
+│   └── music_generation.ipynb
+└── results/
+    ├── loss_curves.png
+    └── results.csv
 ```
 
 ## Setup and run (Google Colab - recommended)
@@ -55,6 +64,9 @@ split 80/10/10 **by piece** into train/validation/test.
 
 ## Results
 Fill in from `results/results.csv`.
+
+### Training and validation loss curves
+![Training and validation loss curves](results/loss_curves.png)
 
 | Model | Test loss | Perplexity | Top-1 | Top-5 |
 |---|---|---|---|---|
